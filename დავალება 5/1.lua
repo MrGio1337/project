@@ -1,6 +1,7 @@
-function calculateArea(a, b)
-    result = a * b / 2
+function calculateArea(a, b, c)
+    s = (a + b + c) / 2
+    result = math.sqrt((s * (s - a) * (s - b) * (s - c)))
     return result
 end
 
-print(calculateArea(3, 4))
+print(calculateArea(10, 11, 9))
